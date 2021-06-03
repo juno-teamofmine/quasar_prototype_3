@@ -7,7 +7,7 @@
 
 <script>
 import { Plugins } from '@capacitor/core'
-import {beforeUnmount, defineComponent} from 'vue';
+import { defineComponent } from 'vue';
 
 const { Geolocation } = Plugins
 
@@ -39,10 +39,10 @@ export default defineComponent({
 
     // we start listening
     if (Geolocation) {
-    this.geoId = Geolocation.watchPosition({}, (position, err) => {
-      console.log('New GPS position')
-      this.position = position
-    })
+      this.geoId = Geolocation.watchPosition({}, (position, err) => {
+        console.log('New GPS position')
+        this.position = position
+      })
     }
   },
 
@@ -52,7 +52,6 @@ export default defineComponent({
     if (Geolocation) {
       Geolocation.clearWatch(this.geoId)
     }
-
   }
 })
 </script>
