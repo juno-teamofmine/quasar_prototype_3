@@ -2,8 +2,7 @@
   <q-btn color="primary" label="back" @click="back" />
   <div>
     <div></div>
-    <div>Model: {{ model }}</div>
-    <div>Manufacturer: {{ manufacturer }}</div>
+    <div>info: {{ info }}</div>
   </div>
 </template>
 
@@ -23,14 +22,12 @@ export default defineComponent({
   },
   data () {
     return {
-      model: 'Please wait...',
-      manufacturer: 'Please wait...'
+      info: 'Please wait...'
     }
   },
   mounted () {
     Device.getInfo().then(info => {
-      this.model = info.model
-      this.manufacturer = info.manufacturer
+      this.info = info;
     })
   }
 })
