@@ -13,8 +13,6 @@
   <q-btn color="primary" label="Get Picture" @click="getPhoto" />
   <q-btn color="primary" label="checkPermissions" @click="checkPermissions" />
   <q-btn color="primary" label="requestPermissions" @click="requestPermissions" />
-
-  <img :src="imageSrc">
 </template>
 
 <script>
