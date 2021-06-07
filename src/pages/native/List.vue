@@ -24,8 +24,8 @@ export default defineComponent({
         {id: 0, title: 'device', name: 'NativeDevice',},
         {id: 1, title: 'geolocation', name: 'NativeGeolocation',},
         {id: 2, title: 'camera', name: 'NativeCamera',},
-        {id: 3, title: 'album', name: 'NativeAlbum',},
-        {id: 4, title: 'push', name: 'NativePush',},
+        {id: 3, title: 'push', name: 'NativePush',},
+        {id: 4, title: 'filesystem', name: 'NativeFile',},
 
       ],
     })

@@ -13,6 +13,8 @@ const routes = [
       { name: 'NativeDevice', path: 'native/device', component: () => import('pages/native/Device.vue')},
       { name: 'NativeGeolocation', path: 'native/geolocation', component: () => import('pages/native/Geolocation.vue')},
       { name: 'NativeCamera', path: 'native/camera', component: () => import('pages/native/Camera.vue')},
+      { name: 'NativeFile', path: 'native/file', component: () => import('pages/native/FileSystem.vue')},
+      
     ]
   },
 
